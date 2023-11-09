@@ -21,10 +21,10 @@ const pool = createPool({
 // });
 
 // select data from db
-// pool.query(`select * FROM user_info`, (err, result) => {
-//   if (err) {
-//     return console.log(err);
-//   }
-//   return console.log(result);
-// });
-// module.exports = pool;
+pool.query(`select * FROM create_user`, (err, result) => {
+  if (err) {
+    return console.log(err);
+  }
+  return console.log(result);
+});
+module.exports = pool;
